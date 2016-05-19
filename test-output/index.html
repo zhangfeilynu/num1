@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite_(0)">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -133,7 +133,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -208,10 +208,10 @@
                   </a> <!-- login -->
                   <span class="method-name">login</span>
                   <div class="stack-trace">org.openqa.selenium.interactions.InvalidCoordinatesException: The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 156 milliseconds
+Command duration or timeout: 33 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;USER-20160327TR&apos;, ip: &apos;192.168.163.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
-Session ID: 33975688-9138-4c44-900a-d65f2c022f59
+Session ID: 120c9293-1cc2-46c5-9134-22a6d7d1a366
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -245,12 +245,12 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
                   </a> <!-- login -->
                   <span class="method-name">login</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 229 milliseconds
+Command duration or timeout: 426 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;USER-20160327TR&apos;, ip: &apos;192.168.163.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: d0afb90f-c499-4892-b316-23cf7aa8adb2
+Session ID: 306cbd8a-6753-424f-ba85-d7473e806f4a
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -294,6 +294,17 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
       &lt;class name=&quot;com.zf.appium.num1.Demo2Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zf.appium.num1.Demo2Test&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zf.appium.num1.Demo2Test --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite (0) --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -312,6 +323,17 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
       &lt;class name=&quot;com.zf.appium.num1.DemoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zf.appium.num1.DemoTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zf.appium.num1.DemoTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -325,6 +347,9 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
               <li>
                 <span class="test-name">Test (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Test(failed) (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -336,6 +361,9 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
             <ul>
               <li>
                 <span class="test-name">Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -372,12 +400,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.zf.appium.num1.Demo2Test')
-data.setCell(0, 3, 30426);
+data.setCell(0, 3, 28329);
 window.suiteTableData['Suite_(0)']= { tableData: data, tableDiv: 'times-div-Suite_(0)'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite_(0)">
               </div> <!-- times-div-Suite_(0) -->
             </div> <!-- times-div -->
@@ -401,7 +429,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.zf.appium.num1.DemoTest')
-data.setCell(0, 3, 47019);
+data.setCell(0, 3, 47190);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -455,11 +483,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login</span>
-                <span class="method-start">22997 ms</span>
+                <span class="method-start">24395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">53425 ms</span>
+                <span class="method-start">52726 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -478,11 +506,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login</span>
-                <span class="method-start">42683 ms</span>
+                <span class="method-start">30699 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">89703 ms</span>
+                <span class="method-start">77890 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

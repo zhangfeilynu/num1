@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite (0)" duration-ms="57165" started-at="2016-05-19T07:00:58Z" finished-at="2016-05-19T07:01:55Z">
+  <suite name="Suite (0)" duration-ms="54875" started-at="2016-05-19T09:00:35Z" finished-at="2016-05-19T09:01:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57165" started-at="2016-05-19T07:00:58Z" finished-at="2016-05-19T07:01:55Z">
+    <test name="Test" duration-ms="54875" started-at="2016-05-19T09:00:35Z" finished-at="2016-05-19T09:01:30Z">
       <class name="com.zf.appium.num1.Demo2Test">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@374d8c71]" name="beforeTest" is-config="true" duration-ms="22993" started-at="2016-05-19T15:00:58Z" finished-at="2016-05-19T15:01:21Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@443f6b14]" name="beforeTest" is-config="true" duration-ms="24387" started-at="2016-05-19T17:00:35Z" finished-at="2016-05-19T17:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.Demo2Test@374d8c71]" name="login" duration-ms="30426" started-at="2016-05-19T15:01:21Z" finished-at="2016-05-19T15:01:51Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.Demo2Test@443f6b14]" name="login" duration-ms="28329" started-at="2016-05-19T17:00:59Z" finished-at="2016-05-19T17:01:28Z">
           <exception class="org.openqa.selenium.interactions.InvalidCoordinatesException">
             <message>
               <![CDATA[The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 156 milliseconds
+Command duration or timeout: 33 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 33975688-9138-4c44-900a-d65f2c022f59
+Session ID: 120c9293-1cc2-46c5-9134-22a6d7d1a366
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.interactions.InvalidCoordinatesException: The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 156 milliseconds
+Command duration or timeout: 33 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 33975688-9138-4c44-900a-d65f2c022f59
+Session ID: 120c9293-1cc2-46c5-9134-22a6d7d1a366
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -69,43 +69,43 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@374d8c71]" name="afterTest" is-config="true" duration-ms="3739" started-at="2016-05-19T15:01:51Z" finished-at="2016-05-19T15:01:55Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@443f6b14]" name="afterTest" is-config="true" duration-ms="2148" started-at="2016-05-19T17:01:28Z" finished-at="2016-05-19T17:01:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.zf.appium.num1.Demo2Test -->
     </test> <!-- Test -->
   </suite> <!-- Suite (0) -->
-  <suite name="Suite" duration-ms="91667" started-at="2016-05-19T07:00:58Z" finished-at="2016-05-19T07:02:30Z">
+  <suite name="Suite" duration-ms="79776" started-at="2016-05-19T09:00:35Z" finished-at="2016-05-19T09:01:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="91667" started-at="2016-05-19T07:00:58Z" finished-at="2016-05-19T07:02:30Z">
+    <test name="Test" duration-ms="79776" started-at="2016-05-19T09:00:35Z" finished-at="2016-05-19T09:01:55Z">
       <class name="com.zf.appium.num1.DemoTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.DemoTest@439ca904]" name="beforeTest" is-config="true" duration-ms="42682" started-at="2016-05-19T15:00:58Z" finished-at="2016-05-19T15:01:41Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.DemoTest@621c6849]" name="beforeTest" is-config="true" duration-ms="30698" started-at="2016-05-19T17:00:35Z" finished-at="2016-05-19T17:01:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.DemoTest@439ca904]" name="login" duration-ms="47019" started-at="2016-05-19T15:01:41Z" finished-at="2016-05-19T15:02:28Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.DemoTest@621c6849]" name="login" duration-ms="47190" started-at="2016-05-19T17:01:05Z" finished-at="2016-05-19T17:01:53Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 229 milliseconds
+Command duration or timeout: 426 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: d0afb90f-c499-4892-b316-23cf7aa8adb2
+Session ID: 306cbd8a-6753-424f-ba85-d7473e806f4a
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 229 milliseconds
+Command duration or timeout: 426 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: d0afb90f-c499-4892-b316-23cf7aa8adb2
+Session ID: 306cbd8a-6753-424f-ba85-d7473e806f4a
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -156,7 +156,7 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.DemoTest@439ca904]" name="afterTest" is-config="true" duration-ms="1963" started-at="2016-05-19T15:02:28Z" finished-at="2016-05-19T15:02:30Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.DemoTest@621c6849]" name="afterTest" is-config="true" duration-ms="1885" started-at="2016-05-19T17:01:53Z" finished-at="2016-05-19T17:01:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
