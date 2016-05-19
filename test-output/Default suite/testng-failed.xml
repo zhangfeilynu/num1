@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.zf.appium.num1.App"/>
+      <class name="com.zf.appium.num1.Demo2Test"/>
+      <class name="com.zf.appium.num1.DemoTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.zf.appium.num1.Demo2Test">
+        <methods>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.zf.appium.num1.Demo2Test -->
+      <class name="com.zf.appium.num1.DemoTest">
+        <methods>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.zf.appium.num1.DemoTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
