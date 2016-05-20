@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite1">
-  <test name="Test">
+<suite name="Suite1" parallel="tests" thread-count="5">
+  <test name="Test1">
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.193:5555"/>
     <classes>
       <class name="com.zf.appium.num1.DemoTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  
+  <test name="Test2">
+    <parameter name="port" value="4725"/>
+    <parameter name="devicename" value="192.168.199.212:5555"/>
+    <classes>
+      <class name="com.zf.appium.num1.Demo2Test"/>
+    </classes>
+  </test> 
+  
 </suite> <!-- Suite -->

@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 150.73 sec <<< FAILURE!
-login(com.zf.appium.num1.Demo2Test)  Time elapsed: 30.13 sec  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 78.766 sec <<< FAILURE! - in TestSuite
+login(com.zf.appium.num1.Demo2Test)  Time elapsed: 25.481 sec  <<< FAILURE!
 org.openqa.selenium.interactions.InvalidCoordinatesException: The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 33 milliseconds
+Command duration or timeout: 238 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 90f19c4f-6894-48f7-a445-5515abd995de
+Session ID: d4e71faf-e124-4d00-971f-936ea1697611
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -21,16 +21,16 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:316)
-	at com.zf.appium.num1.Demo2Test.login(Demo2Test.java:107)
+	at com.zf.appium.num1.Demo2Test.login(Demo2Test.java:112)
 
-login(com.zf.appium.num1.DemoTest)  Time elapsed: 45.938 sec  <<< FAILURE!
+login(com.zf.appium.num1.DemoTest)  Time elapsed: 48.053 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 453 milliseconds
+Command duration or timeout: 360 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: c181b92a-9aa8-4996-a72f-e3bf7c5464c7
+Session ID: a75274ea-93ab-4638-9dec-c70b30322f56
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -53,5 +53,5 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.zf.appium.num1.DemoTest.login(DemoTest.java:125)
+	at com.zf.appium.num1.DemoTest.login(DemoTest.java:130)
 

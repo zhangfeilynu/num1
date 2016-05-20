@@ -15,6 +15,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,10 +31,12 @@ public class DemoTest {
 	
 	private AndroidDriver<AndroidElement> driver;
 	
-	
+	String port;
+	String devicename;
     
-	@BeforeTest
-   public void beforeTest() throws Exception{
+	@BeforeMethod
+	@Parameters({"port","devicename"})
+   public void beforeTest(String port,String devicename) throws Exception{
 	  
 	    //设置apk路径
 	    File classpathRoot = new File(System.getProperty("user.dir"));
@@ -42,7 +46,8 @@ public class DemoTest {
 	    DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setCapability("platformName","Android");
 	    //capabilities.setCapability("deviceName","c3164935");
-	    capabilities.setCapability("deviceName","192.168.199.193:5555");
+	    //capabilities.setCapability("deviceName","192.168.199.193:5555");
+	    capabilities.setCapability("deviceName",devicename);
 	    //设置安卓系统版本
 	    capabilities.setCapability("platformVersion","4.4");
 	    //设置apk路径
@@ -54,8 +59,8 @@ public class DemoTest {
 	    capabilities.setCapability("appPackage","me.sui.arizona");
 	    capabilities.setCapability("appActivity","me.sui.arizona.ui.activity.FirstPageActivity");
 	    //初始化
-	    driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-	       	
+	    //driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+	    driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:"+port+"/wd/hub"),capabilities); 	
     	//comfun=new CommonFunctions("c3164935");
     	
 	  
@@ -133,7 +138,7 @@ public class DemoTest {
          	
     }
 
-    @AfterTest
+    @AfterMethod
     public void afterTest() {
     	//CommonFunctions.snapshot((TakesScreenshot)driver,"Login.png");
     	//driver.closeApp();

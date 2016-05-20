@@ -2,36 +2,44 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="150157" started-at="2016-05-19T05:59:55Z" finished-at="2016-05-19T06:02:25Z">
+  <suite name="Suite1" duration-ms="78191" started-at="2016-05-20T05:59:59Z" finished-at="2016-05-20T06:01:17Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="150157" started-at="2016-05-19T05:59:55Z" finished-at="2016-05-19T06:02:25Z">
+    <test name="Test2" duration-ms="55699" started-at="2016-05-20T05:59:59Z" finished-at="2016-05-20T06:00:55Z">
       <class name="com.zf.appium.num1.Demo2Test">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@1b54a291]" name="beforeTest" is-config="true" duration-ms="23714" started-at="2016-05-19T13:59:55Z" finished-at="2016-05-19T14:00:19Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.zf.appium.num1.Demo2Test@36be1318]" name="beforeTest" is-config="true" duration-ms="25496" started-at="2016-05-20T13:59:59Z" finished-at="2016-05-20T14:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[192.168.199.212:5555]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.zf.appium.num1.DemoTest@517ceb9b]" name="beforeTest" is-config="true" duration-ms="46105" started-at="2016-05-19T14:00:19Z" finished-at="2016-05-19T14:01:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.Demo2Test@1b54a291]" name="login" duration-ms="30091" started-at="2016-05-19T14:01:05Z" finished-at="2016-05-19T14:01:35Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.Demo2Test@36be1318]" name="login" duration-ms="28171" started-at="2016-05-20T14:00:25Z" finished-at="2016-05-20T14:00:53Z">
           <exception class="org.openqa.selenium.interactions.InvalidCoordinatesException">
             <message>
               <![CDATA[The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 33 milliseconds
+Command duration or timeout: 238 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 90f19c4f-6894-48f7-a445-5515abd995de
+Session ID: d4e71faf-e124-4d00-971f-936ea1697611
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.interactions.InvalidCoordinatesException: The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 33 milliseconds
+Command duration or timeout: 238 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 90f19c4f-6894-48f7-a445-5515abd995de
+Session ID: d4e71faf-e124-4d00-971f-936ea1697611
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.212:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.3, databaseEnabled=false, platformName=Android, deviceName=192.168.199.212:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -45,7 +53,7 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:316)
-	at com.zf.appium.num1.Demo2Test.login(Demo2Test.java:107)
+	at com.zf.appium.num1.Demo2Test.login(Demo2Test.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,64 +67,64 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.interactions.InvalidCoordinatesException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@1b54a291]" name="afterTest" is-config="true" duration-ms="2244" started-at="2016-05-19T14:02:21Z" finished-at="2016-05-19T14:02:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.DemoTest@517ceb9b]" name="afterTest" is-config="true" duration-ms="2022" started-at="2016-05-19T14:02:23Z" finished-at="2016-05-19T14:02:25Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.Demo2Test@36be1318]" name="afterTest" is-config="true" duration-ms="1991" started-at="2016-05-20T14:00:53Z" finished-at="2016-05-20T14:00:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.zf.appium.num1.Demo2Test -->
+    </test> <!-- Test2 -->
+    <test name="Test1" duration-ms="78191" started-at="2016-05-20T05:59:59Z" finished-at="2016-05-20T06:01:17Z">
       <class name="com.zf.appium.num1.DemoTest">
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.DemoTest@517ceb9b]" name="login" duration-ms="45930" started-at="2016-05-19T14:01:35Z" finished-at="2016-05-19T14:02:21Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.zf.appium.num1.DemoTest@67177a6]" name="beforeTest" is-config="true" duration-ms="28217" started-at="2016-05-20T13:59:59Z" finished-at="2016-05-20T14:00:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[192.168.199.193:5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.zf.appium.num1.DemoTest@67177a6]" name="login" duration-ms="48041" started-at="2016-05-20T14:00:27Z" finished-at="2016-05-20T14:01:15Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 453 milliseconds
+Command duration or timeout: 360 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: c181b92a-9aa8-4996-a72f-e3bf7c5464c7
+Session ID: a75274ea-93ab-4638-9dec-c70b30322f56
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 453 milliseconds
+Command duration or timeout: 360 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=《周礼》.pdf}
-Session ID: c181b92a-9aa8-4996-a72f-e3bf7c5464c7
+Session ID: a75274ea-93ab-4638-9dec-c70b30322f56
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=4.4, deviceName=192.168.199.193:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.199.193:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -139,7 +147,7 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.zf.appium.num1.DemoTest.login(DemoTest.java:125)
+	at com.zf.appium.num1.DemoTest.login(DemoTest.java:130)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,34 +161,24 @@ Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.ap
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zf.appium.num1.DemoTest@67177a6]" name="afterTest" is-config="true" duration-ms="1910" started-at="2016-05-20T14:01:15Z" finished-at="2016-05-20T14:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.zf.appium.num1.DemoTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>
