@@ -69,6 +69,7 @@ public class Demo2Test {
     @Test
     public void login() throws Exception {
     	
+    	//登录
     	Thread.sleep(8000);
     	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
     	Thread.sleep(3000);
@@ -76,6 +77,15 @@ public class Demo2Test {
     	Thread.sleep(1000);
     	driver.findElement(By.id("me.sui.arizona:id/et_pwd")).sendKeys("Suiyin888001");
     	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
+    	
+    	
+    	//事务
+    	Thread.sleep(3000);
+    	driver.findElement(By.className("android.widget.ImageButton")).click();
+    	Thread.sleep(1000);
+    	driver.findElement(By.name("登出 ")).click();
+    	
+    	
     	//driver.openNotifications();
         //driver.lockDevice();
     	//driver.runAppInBackground(5);
@@ -107,15 +117,15 @@ public class Demo2Test {
         int height = driver.manage().window().getSize().height;
         driver.swipe(width / 2, height / 4, width / 2, height * 3 / 4, 1000);
         Thread.sleep(8000);*/
-    	Thread.sleep(3000);
+    	/*Thread.sleep(3000);
         TouchAction gesture = new TouchAction(driver).press(936, 501).release();//文档右侧按钮
         driver.performTouchAction(gesture);
-        Thread.sleep(3000);
+        Thread.sleep(3000);*/
         /*TouchAction gesture1 = new TouchAction(driver).press(192, 1532).release();//打印按钮
         driver.performTouchAction(gesture1);*/
         //driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'打印 ')]")).click();
-        driver.findElement(By.name("打印")).click();
-        Thread.sleep(3000);
+        /*driver.findElement(By.name("打印")).click();
+        Thread.sleep(3000);*/
         
         
         /*TouchAction action = new TouchAction(driver)

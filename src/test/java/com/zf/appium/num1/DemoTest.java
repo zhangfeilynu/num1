@@ -106,8 +106,8 @@ public class DemoTest {
     	int width = driver.manage().window().getSize().width;
         int height = driver.manage().window().getSize().height;
         driver.swipe(width / 2, height / 4, width / 2, height * 3 / 4, 1000);
-        Thread.sleep(8000);*/
-    	Thread.sleep(5000);
+        //Thread.sleep(8000);
+*/    	Thread.sleep(5000);
         TouchAction gesture = new TouchAction(driver).press(936, 501).release();//文档右侧按钮
         driver.performTouchAction(gesture);
         Thread.sleep(3000);
