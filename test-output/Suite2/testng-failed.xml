@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite2]">
-  <test name="Test">
+<suite name="Failed suite [Suite2]" parallel="tests">
+  <parameter name="port" value="4723"/>
+  <parameter name="devicename" value="192.168.199.194:5555"/>
+  <test name="Test3">
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.194:5555"/>
     <classes>
-      <class name="com.zf.appium.num1.Demo2Test"/>
+      <class name="com.zf.appium.testcases.LoginTest"/>
     </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.zf.appium.num1.Demo2Test">
-        <methods>
-          <include name="login"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.zf.appium.num1.Demo2Test -->
-    </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test3 -->
 </suite> <!-- Failed suite [Suite2] -->

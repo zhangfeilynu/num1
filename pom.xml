@@ -65,6 +65,7 @@
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>./src/test/java/testng.xml</suiteXmlFile>
+            <suiteXmlFile>./src/test/java/testng2.xml</suiteXmlFile>
           </suiteXmlFiles>                
        </configuration>
      </plugin>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="port" value="not-found"/>
-  <parameter name="devicename" value="not-found"/>
-  <test verbose="2" name="Default test">
+<suite name="Failed suite [Suite2]" parallel="tests">
+  <parameter name="port" value="4723"/>
+  <parameter name="devicename" value="192.168.199.194:5555"/>
+  <test name="Test3">
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.194:5555"/>
     <classes>
-      <class name="com.zf.appium.num1.LoginTest"/>
+      <class name="com.zf.appium.testcases.LoginTest"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test3 -->
+</suite> <!-- Failed suite [Suite2] -->
