@@ -18,18 +18,22 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import com.zf.appium.common.CommonFunctions;
+import com.zf.appium.common.DotTestListener;
 
 
 
-public class Demo2Test {
+@Listeners({DotTestListener.class})
+public class Demo2Test extends CommonFunctions {
 	
 	
-	private AndroidDriver<AndroidElement> driver;
+	//private AndroidDriver<AndroidElement> driver;
 	
 	String port;
 	String devicename;
@@ -145,6 +149,7 @@ public class Demo2Test {
         driver.findElement(By.id("me.sui.arizona:id/modepay_textview_pay")).click();
         Thread.sleep(8000);*/
         //System.out.print(driver.getPageSource());
+    	
          	
     }
 

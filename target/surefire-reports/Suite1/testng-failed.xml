@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="port" value="4725"/>
+  <parameter name="devicename" value="192.168.199.118:5555"/>
+  <listeners>
+    <listener class-name="com.zf.appium.common.RetryListener"/>
+  </listeners>
+  <test name="Test1">
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.195:5555"/>
+    <classes>
+      <class name="com.zf.appium.testcases.DemoTest"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <parameter name="port" value="4725"/>
+    <parameter name="devicename" value="192.168.199.118:5555"/>
+    <classes>
+      <class name="com.zf.appium.testcases.Demo2Test"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="devicename" value="192.168.199.118:5555"/>
+    <classes>
+      <class name="com.zf.appium.testcases.Demo2Test">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.zf.appium.testcases.Demo2Test -->
+      <class name="com.zf.appium.testcases.DemoTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.zf.appium.testcases.DemoTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.195:5555"/>
+    <classes>
+      <class name="com.zf.appium.testcases.Demo2Test">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.zf.appium.testcases.Demo2Test -->
+      <class name="com.zf.appium.testcases.DemoTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.zf.appium.testcases.DemoTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

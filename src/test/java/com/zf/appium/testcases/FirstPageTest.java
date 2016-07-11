@@ -21,7 +21,7 @@ public class FirstPageTest {
 	public FirstPageAction dr;
 	private AndroidDriver<AndroidElement> driver;
 	
-		
+			
    @Parameters({"port","devicename"})
    @BeforeMethod
    public void beforeTest(String port,String devicename) throws Exception{
@@ -33,19 +33,19 @@ public class FirstPageTest {
     @Test
     public void fptest() throws Exception {
     	
-    	Thread.sleep(8000);
+    	/*Thread.sleep(8000);
     	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
     	Thread.sleep(3000);
     	driver.findElement(By.id("me.sui.arizona:id/et_phone")).sendKeys("15261672979");
     	Thread.sleep(1000);
     	driver.findElement(By.id("me.sui.arizona:id/et_pwd")).sendKeys("Suiyin888001");
-    	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
+    	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();*/
          	
     }
 
     @AfterMethod
     public void afterTest() throws Exception {
-        driver.quit();
+        //driver.quit();
     }
 
 }

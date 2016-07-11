@@ -8,6 +8,7 @@ import io.appium.java_client.android.AndroidKeyCode;
 
 import java.io.File;
 import java.net.URL;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.codec.binary.Base64;
@@ -18,27 +19,28 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import com.zf.appium.common.CommonFunctions;
+import com.zf.appium.common.DotTestListener;
 
 
-
-
-public class DemoTest {
+@Listeners({DotTestListener.class})
+public class DemoTest extends CommonFunctions {
 	
 	
-	private AndroidDriver<AndroidElement> driver;
-	
+	//public AndroidDriver<AndroidElement> driver;
 	String port;
 	String devicename;
+	//CommonFunctions comm = new CommonFunctions();
     
 	@BeforeMethod
 	@Parameters({"port","devicename"})
    public void beforeTest(String port,String devicename) throws Exception{
-	  
-	    //设置apk路径
+		//设置apk路径
 	    File classpathRoot = new File(System.getProperty("user.dir"));
 	    File appDir=new File(classpathRoot,"apps");
 	    File app=new File(appDir,"app-release2.apk");//要测试的app
@@ -69,13 +71,30 @@ public class DemoTest {
     @Test
     public void login() throws Exception {
     	
+    	//CommonFunctions comm=new CommonFunctions();
     	Thread.sleep(8000);
-    	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
-    	Thread.sleep(3000);
+    	/*driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
+    	Thread.sleep(3000);*/
     	driver.findElement(By.id("me.sui.arizona:id/et_phone")).sendKeys("15261672979");
     	Thread.sleep(1000);
     	driver.findElement(By.id("me.sui.arizona:id/et_pwd")).sendKeys("Suiyin888001");
     	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
+    	Thread.sleep(5000);
+    	List<AndroidElement> lis = driver.findElementsByClassName("android.widget.ImageView");//获取ImageView的所有元素
+    	AndroidElement targetEle = lis.get(5);//获取列表中第一个元素
+    	targetEle.click();
+    	Thread.sleep(3000);
+    	driver.findElement(By.id("me.sui.arizona:id/print_pop_print")).click();
+    	driver.findElement(By.id("me.sui.arizona:id/number_add")).click();
+    	driver.findElement(By.id("me.sui.arizona:id/tv_print_now")).click();
+    	Thread.sleep(5000);
+    	driver.findElement(By.id("me.sui.arizona:id/bt_commit")).click();
+    	Thread.sleep(5000);
+    	driver.switchTo().frame(2);
+    	Thread.sleep(5000);
+    	driver.findElement(By.id("me.sui.arizona:id/bt_commit")).click();
+    	Thread.sleep(8000);
+    
     	//driver.openNotifications();
         //driver.lockDevice();
     	//driver.runAppInBackground(5);
@@ -107,21 +126,22 @@ public class DemoTest {
         int height = driver.manage().window().getSize().height;
         driver.swipe(width / 2, height / 4, width / 2, height * 3 / 4, 1000);
         //Thread.sleep(8000);
-*/    	Thread.sleep(5000);
+*/    	
+    	/*Thread.sleep(5000);
         TouchAction gesture = new TouchAction(driver).press(936, 501).release();//文档右侧按钮
         driver.performTouchAction(gesture);
         Thread.sleep(3000);
-        /*TouchAction gesture1 = new TouchAction(driver).press(192, 1532).release();//打印按钮
-        driver.performTouchAction(gesture1);*/
+        TouchAction gesture1 = new TouchAction(driver).press(192, 1532).release();//打印按钮
+        driver.performTouchAction(gesture1);
         //driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'打印 ')]")).click();
         driver.findElement(By.name("打印")).click();
         Thread.sleep(3000);
         
         
-        /*TouchAction action = new TouchAction(driver)
+        TouchAction action = new TouchAction(driver)
         .press(mapview, 10, 10)
         .release().
-        perform();*/
+        perform();
         
         driver.findElement(By.id("me.sui.arizona:id/print_options_confirm")).click();
         Thread.sleep(3000);
@@ -135,15 +155,19 @@ public class DemoTest {
         driver.findElement(By.id("me.sui.arizona:id/modepay_textview_pay")).click();
         Thread.sleep(8000);
         //System.out.print(driver.getPageSource());
-         	
+*/      
+    	
     }
 
     @AfterMethod
-    public void afterTest() {
+    public void afterTest() throws InterruptedException {
     	//CommonFunctions.snapshot((TakesScreenshot)driver,"Login.png");
     	//driver.closeApp();
     	//driver.removeApp("me.sui.arizona");
     	//driver.resetApp();
+    	//CommonFunctions.snapshot(driver, "image");
+    	//comm.takeScreenshot(driver);
+    	Thread.sleep(5000);
     	driver.quit();
     }
 
