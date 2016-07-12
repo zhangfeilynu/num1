@@ -11,7 +11,7 @@ public class TestngRetry implements IRetryAnalyzer{
     private static int maxRetryCount;
     static {
         //外围文件配置最大运行次数
-        maxRetryCount = 3;
+        maxRetryCount = 2;
     }
     @Override
     public boolean retry(ITestResult result) {

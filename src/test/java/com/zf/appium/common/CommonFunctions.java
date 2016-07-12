@@ -77,7 +77,7 @@ public class CommonFunctions {
 	 * @param filename
 	 */
 	public static void snapshot(TakesScreenshot drivername, String filename) {
-       	String dateStr = String.valueOf(new Date().getTime());
+       //String dateStr = String.valueOf(new Date().getTime());
         String currentPath = System.getProperty("user.dir");                                                                 
         File scrFile = drivername.getScreenshotAs(OutputType.FILE);
         try {

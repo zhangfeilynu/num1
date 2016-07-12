@@ -3,10 +3,12 @@ package com.zf.appium.common;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 //import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 import com.zf.appium.common.ScreenShot;
 /**
@@ -34,5 +36,19 @@ public class DotTestListener extends TestListenerAdapter {
         }
 		
     }
+	
+	/*private void takeScreenShot(ITestResult tr) {
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+		String mDateTime = formatter.format(new Date());
+		String fileName = mDateTime + "" + tr.getName();
+		String filePath = OrangeiOS.driver.getScreenshotAs(fileName);
+		Reporter.setCurrentTestResult(tr);
+		Reporter.log(filePath);
+
+		//这里实现把图片链接直接输出到结果文件中，通过邮件发送结果则可以直接显示图片
+		//Reporter.log(“<img src=\”../” + filePath + “\”/>”);
+		Reporter.log(“<img src=\”../” + filePath + “\”/>”);
+
+    }*/
 
 }

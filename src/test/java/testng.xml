@@ -3,6 +3,7 @@
 <suite name="Suite1" parallel="tests" thread-count="5">
   <listeners>
     <listener class-name="com.zf.appium.common.RetryListener" />
+    <!-- <listener class-name="com.zf.appium.common.TestListener" /> -->
   </listeners>
   <test name="Test1">
     <parameter name="port" value="4723"/>
@@ -12,13 +13,13 @@
     </classes>
   </test> 
   
-  <test name="Test2">
+  <!-- <test name="Test2">
     <parameter name="port" value="4725"/>
     <parameter name="devicename" value="192.168.199.118:5555"/>
     <classes>
       <class name="com.zf.appium.testcases.Demo2Test"/>
     </classes>
-  </test> 
+  </test>  -->
   
   <!-- <test name="Test3">
     <parameter name="port" value="4723"/>
