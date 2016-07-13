@@ -6,8 +6,8 @@
     <listener class-name="com.zf.appium.common.TestListener" />
   </listeners>
   <test name="Test1">
-    <!-- <parameter name="port" value="4723"/>
-    <parameter name="devicename" value="192.168.199.195:5555"/> -->
+    <parameter name="port" value="4723"/>
+    <parameter name="devicename" value="192.168.199.194:5555"/>
     <classes>
       <class name="com.zf.appium.testcases.DemoTest"/>
     </classes>

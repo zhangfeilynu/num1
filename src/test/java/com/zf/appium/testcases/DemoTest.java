@@ -5,12 +5,10 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.AndroidKeyCode;
-
 import java.io.File;
 import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
@@ -38,7 +36,7 @@ public class DemoTest extends CommonFunctions {
 	//CommonFunctions comm = new CommonFunctions();
     
 	@BeforeMethod
-	//@Parameters({"port","devicename"})
+	@Parameters({"port","devicename"})
    public void beforeTest(String port,String devicename) throws Exception{
 		//设置apk路径
 	    File classpathRoot = new File(System.getProperty("user.dir"));
