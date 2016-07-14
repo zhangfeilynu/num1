@@ -12,10 +12,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- <property>
-        <name>listener</name>
-        <value>com.zf.appium.common.RetryListener</value>
-    </property> -->
   </properties>
 
   <dependencies>
@@ -36,6 +32,7 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>6.9.10</version>
+      <scope>test</scope>
     </dependency>
     
     <dependency>
@@ -70,7 +67,18 @@
           <suiteXmlFiles>
             <suiteXmlFile>./src/test/java/testng.xml</suiteXmlFile>
             <!-- <suiteXmlFile>./src/test/java/testng2.xml</suiteXmlFile> -->
-          </suiteXmlFiles>                
+          </suiteXmlFiles>
+          <properties>
+              <property>
+                  <name>usedefaultlisteners</name>
+                  <value>false</value>
+              </property>
+              <property>
+                  <name>listener</name>
+                  <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+              </property>
+          </properties>
+          <!-- <workingDirectory>target/</workingDirectory> -->                
        </configuration>
      </plugin>
      <plugin>  
@@ -81,8 +89,8 @@
                 <source>1.7</source>  
                 <target>1.7</target>  
             </configuration>  
-        </plugin>  
-   </plugins>
+      </plugin>
+    </plugins>
   </build>
  
   
