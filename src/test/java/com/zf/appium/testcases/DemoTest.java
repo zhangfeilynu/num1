@@ -79,7 +79,7 @@ public class DemoTest extends CommonFunctions {
     	driver.findElement(By.id("me.sui.arizona:id/btn_login")).click();
     	Thread.sleep(5000);
     	List<AndroidElement> lis = driver.findElementsByClassName("android.widget.ImageView");//获取ImageView的所有元素
-    	AndroidElement targetEle = lis.get(5);//获取列表中第一个元素
+    	AndroidElement targetEle = lis.get(0);//获取列表中第一个元素
     	targetEle.click();
     	Thread.sleep(3000);
     	driver.findElement(By.id("me.sui.arizona:id/print_pop_print")).click();

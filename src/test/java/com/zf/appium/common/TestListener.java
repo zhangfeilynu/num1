@@ -5,7 +5,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-
+//解决报告中失败测试用例重跑后重复计数的问题
 public class TestListener implements ITestListener {
 
     @Override

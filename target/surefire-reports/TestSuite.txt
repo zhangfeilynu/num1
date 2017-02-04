@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 123.803 sec <<< FAILURE! - in TestSuite
-login(com.zf.appium.testcases.DemoTest)  Time elapsed: 11.592 sec  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 108.425 sec <<< FAILURE! - in TestSuite
+login(com.zf.appium.testcases.DemoTest)  Time elapsed: 10.5 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 834 milliseconds
+Command duration or timeout: 77 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'USER-20160327TR', ip: '192.168.163.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=id, value=me.sui.arizona:id/et_phone}
-Session ID: 716ccf48-74f9-4783-9c74-204b3c6ed596
+Session ID: 135d611a-c316-4dcc-9f54-4d4ddd26bfd7
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=6.0, deviceName=192.168.199.194:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=6.0.1, databaseEnabled=false, platformName=Android, deviceName=192.168.199.195:5555, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
+Capabilities [{platform=LINUX, app=D:\workspace4javaee\num1\apps\app-release2.apk, javascriptEnabled=true, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, browserName=Android, networkConnectionEnabled=true, desired={app=D:\workspace4javaee\num1\apps\app-release2.apk, platformVersion=6.0, deviceName=192.168.199.194:5555, platformName=Android, appActivity=me.sui.arizona.ui.activity.FirstPageActivity, unicodeKeyboard=true, resetKeyboard=true, appPackage=me.sui.arizona}, locationContextEnabled=false, appPackage=me.sui.arizona, platformVersion=6.0.1, databaseEnabled=false, platformName=Android, deviceName=c3164935, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
